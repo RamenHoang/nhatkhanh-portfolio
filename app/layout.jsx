@@ -1,4 +1,4 @@
-import { Outfit } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 
 // compoenents
@@ -7,9 +7,10 @@ import Footer from "@/components/Footer";
 // theme provider
 import { ThemeProvider } from "@/components/ThemeProvider";
 
-const outfit = Outfit({ subsets: ["latin"] });
+const outfit = Roboto({ subsets: ["latin", "vietnamese"], weight: "400" });
 
 export const metadata = {
+  metadataBase: new URL("https://nhatkhanhielts.com"),
   title: "Nhật Khanh - Giáo viên IELTS & Giao tiếp | 5+ năm kinh nghiệm",
   description:
     "Nhật Khanh - Giáo viên IELTS & Giao tiếp với hơn 5 năm kinh nghiệm. Đào tạo cá nhân hóa, giúp học viên đạt band điểm cao và tự tin giao tiếp. Đăng ký ngay!",
@@ -29,7 +30,14 @@ export const metadata = {
       "Nhật Khanh - Giáo viên IELTS & Giao tiếp với hơn 5 năm kinh nghiệm. Đào tạo cá nhân hóa, giúp học viên đạt band điểm cao và tự tin giao tiếp. Đăng ký ngay!",
     url: "https://nhatkhanhielts.com",
     type: "website",
-    image: "/thumbnail.jpg", // Thay bằng ảnh thật
+    images: [
+      {
+        url: "/thumbnail.jpg", // Đúng định dạng Next.js
+        width: 1200,
+        height: 630,
+        alt: "Giáo viên IELTS & Giao tiếp",
+      },
+    ],
   },
 };
 

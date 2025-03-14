@@ -7,6 +7,9 @@ import { usePathname } from "next/navigation";
 // framer motion
 import { motion } from "framer-motion";
 
+// react
+import { useState } from "react";
+
 const links = [
   { path: "/", name: "Trang Chủ" },
   { path: "/projects", name: "Khóa Học" },
@@ -14,15 +17,25 @@ const links = [
 ];
 
 const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
+  const [isNavOpen, setIsNavOpen] = useState(false);
   const path = usePathname();
+
+  const handleLinkClick = () => {
+    setIsNavOpen(false);
+    if (onLinkClick) {
+      onLinkClick();
+    }
+  };
+
   return (
-    <nav className={`${containerStyles}`}>
+    <nav className={`${containerStyles} ${isNavOpen ? "open" : ""}`}>
       {links.map((link, index) => {
         return (
           <Link
             href={link.path}
             key={index}
             className={`capitalize ${linkStyles}`}
+            onClick={handleLinkClick}
           >
             {link.path === path && (
               <motion.span
