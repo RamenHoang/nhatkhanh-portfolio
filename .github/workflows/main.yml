@@ -1,0 +1,39 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Install sshpass
+      run: sudo apt-get install -y sshpass
+
+    - name: SSH into server and deploy application
+      run: |
+        sshpass -p "${{ secrets.SERVER_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} << EOF
+          cd /root/nhatkhanh-portfolio
+
+          # Set GitHub credentials using GITHUB_TOKEN
+          git config --global credential.helper store
+          echo "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" > ~/.git-credentials
+
+          # Pull the latest code from the repository
+          git pull origin master
+
+          # Install dependencies
+          npm i
+
+          # Build
+          npm run build
+
+          # Restart the service
+          pm2 reload ecosytem.config.js
+        EOF
