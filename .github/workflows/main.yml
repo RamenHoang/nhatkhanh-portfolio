@@ -18,7 +18,7 @@ jobs:
 
     - name: SSH into server and deploy application
       run: |
-        sshpass -p "${{ secrets.SERVER_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} << EOF
+        sshpass -p "${{ env.SERVER_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ env.SERVER_USER }}@${{ env.SERVER_HOST }} << EOF
           cd /root/nhatkhanh-portfolio
 
           # Set GitHub credentials using GITHUB_TOKEN
