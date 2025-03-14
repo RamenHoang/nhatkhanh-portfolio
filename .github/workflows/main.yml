@@ -8,6 +8,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: PROD
 
     env:
       SERVER_PASSWORD: ${{ secrets.SERVER_PASSWORD }}
