@@ -1,1 +1,11 @@
 test
+git add .
+git commit -m "<<Em điền gì cũng đc>>"
+git push origin master
+
+
+source ~/.bashrc
+cd nhatkhanh-portfolio/
+git pull
+npm run build
+pm2 restart ecosytem.config.js

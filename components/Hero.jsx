@@ -65,15 +65,15 @@ const Hero = () => {
             <Badge
               containerStyles="absolute top-[70%] -left-[1rem]"
               icon={<RiTodoFill />}
-              endCountNum={2}
-              endCountText="k"
+              endCountNum={500}
+              endCountText="+"
               badgeText="Học viên đạt aim"
             />
             {/* badge 3 */}
             <Badge
               containerStyles="absolute top-[65%] -right-8"
               icon={<RiTeamFill />}
-              endCountNum={10}
+              endCountNum={5}
               endCountText="k"
               badgeText="Học viên thích"
             />

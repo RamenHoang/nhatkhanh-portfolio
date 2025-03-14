@@ -22,58 +22,59 @@ import { Pagination } from "swiper/modules";
 const reviewsData = [
   {
     avatar: "/reviews/avatar-1.png",
-    name: "Gia Nghi",
-    job: "Foundation Student",
+    name: "Thảo Như",
+    job: "Sinh viên",
     review:
-      "Khóa Foundation đã giúp mình nắm vững kiến thức cơ bản, rất hữu ích!",
+      "Dạ em cảm ơn chị, tài liệu đầy đủ dễ nhìn dễ đọc, bài giảng dễ hiểu và thực tế!",
   },
   {
     avatar: "/reviews/avatar-2.png",
-    name: "Hương Giang",
-    job: "Advance Student",
+    name: "Thanh Huyền",
+    job: "Sinh viên",
     review:
-      "Mình đã cải thiện đáng kể kỹ năng với khóa Advance, giảng viên rất tận tâm!",
+      "Chị giảng rất nhiệt tình, sửa bài tích cực, giúp em hiểu bài nhanh hơn!",
   },
   {
     avatar: "/reviews/avatar-3.png",
-    name: "Minh Ngọc",
-    job: "Newbie Student",
+    name: "Nguyệt My",
+    job: "Học sinh cấp 3",
     review:
-      "Lớp học thân thiện, dễ hiểu, rất phù hợp với người mới bắt đầu như mình.",
+      "Em cảm ơn chị rất nhiều, khóa học giúp em cải thiện đáng kể kỹ năng!",
   },
   {
     avatar: "/reviews/avatar-4.png",
-    name: "Minh Thư",
-    job: "Newbie Student",
+    name: "Anh Huy",
+    job: "Người đi làm",
     review:
-      "Khóa học giúp mình tự tin hơn khi giao tiếp, bài giảng dễ hiểu và thực tế.",
+      "Ngoài sức mong đợi của em luôn chị, các bạn tutor sửa bài rất kỹ, chấm chữa thoải mái!",
   },
   {
     avatar: "/reviews/avatar-5.png",
-    name: "Minh Tuấn",
-    job: "Newbie Student",
+    name: "Gia Linh",
+    job: "Sinh viên",
     review:
-      "Giảng viên rất nhiệt tình, mình đã học được nhiều kiến thức hữu ích!",
+      "Khóa học rất hay, chị giảng năng suất, truyền đạt dễ hiểu, sửa bài tích cực!",
   },
   {
     avatar: "/reviews/avatar-6.png",
-    name: "Nguyễn Hoa",
-    job: "Newbie Student",
+    name: "Khải Linh",
+    job: "Sinh viên",
     review:
-      "Mình rất thích cách giảng dạy, bài tập thực hành giúp nhớ bài lâu hơn.",
+      "Em cảm ơn chị, bài giảng dễ hiểu, lớp học thân thiện, hỗ trợ tận tình!",
   },
   {
     avatar: "/reviews/avatar-7.png",
-    name: "Nguyễn Ninh",
-    job: "Newbie & Advance Student",
-    review: "Mình tham gia cả hai khóa Newbie và Advance, rất đáng đồng tiền!",
+    name: "Minh Quân",
+    job: "Sinh viên",
+    review:
+      "Tài liệu đầy đủ, bài tập thực hành giúp nhớ bài lâu hơn, giảng viên rất tận tâm!",
   },
   {
     avatar: "/reviews/avatar-8.png",
-    name: "Trường Giang",
-    job: "Advance Student",
+    name: "Khánh Ninh",
+    job: "Sinh viên",
     review:
-      "Chương trình học logic, giúp mình cải thiện rõ rệt khả năng tiếng Anh.",
+      "Mình tham gia cả khóa Newbie và Advance, giảng viên giảng logic, dễ hiểu!",
   },
 ];
 
