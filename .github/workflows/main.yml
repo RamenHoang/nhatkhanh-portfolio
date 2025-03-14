@@ -19,12 +19,16 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Install sshpass
-      run: sudo apt-get install -y sshpass
+    - name: Setup SSH
+      uses: webfactory/ssh-agent@v0.5.3
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
     - name: SSH into server and deploy application
       run: |
-        sshpass -p "${{ env.SERVER_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ env.SERVER_USER }}@${{ env.SERVER_HOST }} << EOF
+        ssh -o StrictHostKeyChecking=no ${{ env.SERVER_USER }}@${{ env.SERVER_HOST }} << EOF
+          source /root/.bashrc
+
           cd /root/nhatkhanh-portfolio
 
           # Set GitHub credentials using GITHUB_TOKEN
