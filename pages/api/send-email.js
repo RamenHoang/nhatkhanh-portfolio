@@ -14,7 +14,7 @@ export default async function handler(req, res) {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER,
+      to: process.env.TO_EMAIL,
       subject: `[Hoàng Vương Portfolio] Liên hệ từ "${name}"`,
       text: `Tên: ${name}\nEmail: ${email}\nNội dung: ${message}`
     };
