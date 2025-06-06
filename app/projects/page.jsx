@@ -5,7 +5,7 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
   {
-    image: "/work/3.png",
+    image: "/work/đội ngũ giảng viên.png",
     category: "Team Giáo viên cộng sự",
     name: "Đội ngũ giảng viên chuyên nghiệp",
     description:
@@ -14,7 +14,7 @@ const projectData = [
     github: "https://www.facebook.com/ieltsgiaotiepcrown",
   },
   {
-    image: "/work/4.png",
+    image: "/work/hệ thống cố vấn.png",
     category: "Team Giáo viên cộng sự",
     name: "Hệ thống cố vấn học tập",
     description:
@@ -23,7 +23,7 @@ const projectData = [
     github: "https://www.facebook.com/ieltsgiaotiepcrown",
   },
   {
-    image: "/work/2.png",
+    image: "/work/giáo trình cập nhật liên tục.png",
     category: "Giáo án khoá học",
     name: "Giáo trình cập nhật liên tục",
     description:
@@ -32,7 +32,7 @@ const projectData = [
     github: "https://www.facebook.com/ieltsgiaotiepcrown",
   },
   {
-    image: "/work/1.png",
+    image: "/work/bài giảng sinh động và thực tế.png",
     category: "Giáo án khoá học",
     name: "Bài giảng sinh động & thực tế",
     description:
@@ -41,7 +41,7 @@ const projectData = [
     github: "https://www.facebook.com/ieltsgiaotiepcrown",
   },
   {
-    image: "/work/3.png",
+    image: "/work/lộ trình cá nhân hóa.png",
     category: "Lộ trình chi tiết",
     name: "Lộ trình cá nhân hóa",
     description:
@@ -50,7 +50,7 @@ const projectData = [
     github: "https://www.facebook.com/ieltsgiaotiepcrown",
   },
   {
-    image: "/work/4.png",
+    image: "/work/phương pháp học tập hiệu quả.png",
     category: "Lộ trình chi tiết",
     name: "Phương pháp học hiệu quả",
     description:
@@ -59,7 +59,7 @@ const projectData = [
     github: "https://www.facebook.com/ieltsgiaotiepcrown",
   },
   {
-    image: "/work/1.png",
+    image: "/work/hỗ trợ học viên liên tục.png",
     category: "Support Học Viên 24/7",
     name: "Hỗ trợ học viên liên tục",
     description:
@@ -68,7 +68,7 @@ const projectData = [
     github: "https://www.facebook.com/ieltsgiaotiepcrown",
   },
   {
-    image: "/work/3.png",
+    image: "/work/cộng đồng học viên năng động.png",
     category: "Support Học Viên 24/7",
     name: "Cộng đồng học viên năng động",
     description:
@@ -77,7 +77,7 @@ const projectData = [
     github: "https://www.facebook.com/ieltsgiaotiepcrown",
   },
   {
-    image: "/work/2.png",
+    image: "/work/tài nguyên học phong phú.png",
     category: "Support Học Viên 24/7",
     name: "Tài nguyên học tập phong phú",
     description:

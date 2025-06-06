@@ -17,7 +17,7 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
   {
-    image: "/work/3.png",
+    image: "/work/ielts giao tiếp crown.png",
     category: "education",
     name: "IELTS & Giao Tiếp Crown",
     description:
@@ -26,7 +26,7 @@ const projectData = [
     github: "https://www.facebook.com/ieltsgiaotiepcrown ",
   },
   {
-    image: "/work/4.png",
+    image: "/work/shinee.png",
     category: "education",
     name: "Ngoại Ngữ Shinee",
     description:
@@ -35,7 +35,7 @@ const projectData = [
     github: "https://ielts.shinee.vn/ ",
   },
   {
-    image: "/work/2.png",
+    image: "/work/topgiaovien.png",
     category: "community",
     name: "Topgiaovien",
     description:
@@ -44,7 +44,7 @@ const projectData = [
     github: "https://topgiaovien.vn/ ",
   },
   {
-    image: "/work/1.png",
+    image: "/work/be shine.png",
     category: "community",
     name: "BeShine English Speaking",
     description:
